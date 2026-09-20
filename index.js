@@ -80,6 +80,19 @@
 // Q-10
 // const fs = require("node:fs");
 
+// function deleteFile(p) {
+//     fs.unlink(p, (err) => {
+//         if (err) return console.log(err.message);
+//         console.log("The file.txt is deleted.");
+//     });
+// }
+// deleteFile("./path/to/file.txt");
+
+// Q-11
+// const fs = require("node:fs");
+
+// fs.mkdirSync("./data");
+
 // Q-12
 // const EventEmitter = require("node:events");
 
@@ -128,3 +141,31 @@
 // }
 
 // console.log(OSAndCPU());
+
+// Q-18
+// const fs = require("node:fs");
+
+// const readStream = fs.createReadStream("./big.txt");
+
+// readStream.on("data", (chunk) => {
+//     console.log(chunk);
+//     console.log("===========================================");
+// });
+
+// Q-19
+// const fs = require("node:fs");
+
+// const readStream = fs.createReadStream("./source.txt");
+// const writeStream = fs.createWriteStream("./dest.txt");
+
+// readStream.on("data", (chunk) => {
+//     writeStream.write(chunk);
+// });
+
+// Q-20
+// const fs = require("node:fs");
+
+// const readStream = fs.createReadStream("./data.txt",);
+// const writeStream = fs.createWriteStream("./data.txt.gz");
+
+// readStream.pipe(writeStream);
